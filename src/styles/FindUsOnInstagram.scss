@@ -1,0 +1,156 @@
+$gray: #1c1c1c;
+$red: #d02130;
+
+.find-us {
+  width: 100%;
+  height: 300px;
+  background-color: $gray;
+  color: white;
+  position: relative;
+}
+
+.find-us-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-us-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.find-us-hr {
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.find-us-desc {
+  font-size: 15px;
+}
+
+.find-us-button {
+  margin-top: 20px;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+  &:hover {
+    letter-spacing: 1px;
+    width: 205px;
+    height: 85px;
+    .find-us-svg {
+      transform: rotate(360deg);
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.find-us-svg {
+  width: 35px;
+  transition: all 0.5s ease;
+  height: 35px;
+  fill: white;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+#findus_tp {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  top: -340px;
+  visibility: hidden;
+}
+@media screen and (max-width: 900px) {
+  .find-us {
+    height: 280px;
+  }
+  .find-us-title {
+    font-size: 30px;
+  }
+  .find-us-button {
+    width: 180px;
+    height: 70px;
+    &:hover {
+      width: 185px;
+      height: 75px;
+      .find-us-svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .find-us-svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-height: 820px) {
+  #findus_tp {
+    top: -110%;
+  }
+}
+@media screen and (max-height: 740px) {
+  #findus_tp {
+    top: -90%;
+  }
+}
+@media screen and (max-height: 650px) {
+  #findus_tp {
+    top: -80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .find-us {
+    height: 240px;
+  }
+  .find-us-title {
+    font-size: 25px;
+  }
+  .find-us-hr {
+    margin-top: 15px;
+  }
+  .find-us-desc {
+    font-size: 15px;
+  }
+  .find-us-button {
+    width: 170px;
+    height: 60px;
+    font-size: 14px;
+    &:hover {
+      width: 175px;
+      height: 65px;
+      .find-us-svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .find-us-svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .find-us-title {
+    font-size: 22px;
+  }
+  .find-us-hr {
+    width: 100px;
+  }
+  .find-us-desc {
+    font-size: 14.5px;
+  }
+}

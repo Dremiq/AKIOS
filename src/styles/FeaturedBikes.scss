@@ -1,0 +1,279 @@
+$gray: #1c1c1c;
+$red: #d02130;
+
+.featuredbikes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.featuredbikes-title {
+  margin-top: 35px;
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: $gray;
+}
+
+.featuredbikes-title-painted {
+  color: $red;
+}
+
+.featuredbikes-grid {
+  width: 1300px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fbg {
+  width: 370px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  margin: 25px;
+  transition: all 0.2s ease;
+  backface-visibility: hidden;
+  &:hover {
+    transform: scale(1.048);
+    .fbg-title {
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.fbg-img {
+  width: 310px;
+  transition: all 0.5s ease;
+  -webkit-backface-visibility: hidden;
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+}
+
+.fbg-title {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  height: 45px;
+}
+
+.featuredbikes-showcase {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.featuredbikes-showcase-inner {
+  width: 100%;
+  height: 10000px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.fbs-div {
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fbs-img {
+  width: 650px;
+  max-height: 400px;
+}
+
+.fbs-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+
+.fbs-title {
+  font-size: 30px;
+}
+
+.fbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fbs-titles {
+  font-size: 18px;
+  color: $gray;
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .featuredbikes-grid {
+    padding: 0px 125px 0px 125px;
+    width: 100%;
+  }
+  .fbg {
+    width: 315px;
+    margin: 15px;
+    height: 220px;
+  }
+  .fbg-img {
+    width: 270px;
+  }
+  .featuredbikes-showcase {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fbs-img {
+    width: 550px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .featuredbikes-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fbs-img {
+    width: 400px;
+    padding-bottom: 50px;
+    margin-top: -40px;
+  }
+  .featuredbikes-showcase {
+    margin: 0px;
+    margin-bottom: -60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .featuredbikes-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 150px 0px 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .featuredbikes-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fbs-div {
+    height: 466.66px;
+  }
+  .featuredbikes-showcase {
+    height: 466.66px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .featuredbikes-showcase-inner {
+  }
+  .fbs-img {
+    width: 310px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .fbs-title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+    padding: 0px 15px 0px 15px;
+    width: 300px;
+  }
+  .fbs-titles {
+    font-size: 16px;
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .fbs-content {
+    margin: 0px;
+  }
+  .fbs {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .fbg-img {
+    width: 250px;
+    padding-top: 5px;
+  }
+  .fbg {
+    width: 270px;
+    height: 100%;
+  }
+  .featuredbikes-grid {
+    width: 100%;
+    padding: 0px;
+  }
+  .fbg-title {
+    font-size: 15px;
+  }
+  .featuredbikes-showcase {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .fbs-img {
+    width: 280px;
+  }
+  .fbs-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 317px) {
+  .fbg-img {
+    width: 230px;
+  }
+  .fbg {
+    width: 250px;
+  }
+  .featuredbikes-title {
+    padding: 0px;
+  }
+  .fbg-title {
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+  }
+  .fbs-img {
+    width: 260px;
+  }
+}
